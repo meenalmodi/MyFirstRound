@@ -15,7 +15,7 @@ import javax.inject.Inject
 class GetRepository
 @Inject
 constructor(private val getApiServiceImp: GetServiceImp) {
-    val results = arrayListOf<Item>()pw
+    val results = arrayListOf<Item>()
 
     fun get(): Flow<ArrayList<Item>> = flow {
         val response = getApiServiceImp.get()
