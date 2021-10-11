@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MyFirstRound</string>
+    <string name="question_lists">question_lists</string>
+</resources>
