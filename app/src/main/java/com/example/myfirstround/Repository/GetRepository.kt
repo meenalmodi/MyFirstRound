@@ -9,8 +9,6 @@ import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.flowOn
 import javax.inject.Inject
 
-//is repository me hum "Flow" use karenge
-//FLOW helps in handling the fetched data from the server Asynchronously and sequence vise me data ko emit kerwata hai
 
 class GetRepository
 @Inject
@@ -31,5 +29,4 @@ constructor(private val getApiServiceImp: GetServiceImp) {
 
         emit(results)
     }.flowOn(Dispatchers.IO)
-    //"flowOn(Dispatchers.IO)" --  helps in running the tasks in the background because its an asynchronous task
 }

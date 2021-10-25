@@ -12,10 +12,7 @@ import kotlinx.coroutines.flow.catch
 import javax.inject.Inject
 
 @HiltViewModel
-//ViewModel is an external library do that means iski directly to dependency nahi provide kerwa sakte
 
-//Flow is not Lifecycle aware, so we need to convert it to LiveData -
-// means jaise hamari activity behave karegi waise hi hamara Live Data behavie karega, agar Activity destroy hogi toh Live data b destroy hoga
 class GetViewModel @Inject
 constructor(private val getRepository: GetRepository)
     : ViewModel() {
